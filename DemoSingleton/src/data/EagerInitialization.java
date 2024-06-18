@@ -1,0 +1,29 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package data;
+
+/**
+ *
+ * @author User
+ */
+public class EagerInitialization {
+    private static final EagerInitialization instance = new EagerInitialization();
+    private EagerInitialization(){
+        
+    }
+    public static EagerInitialization getInstance(){
+        return instance;
+    }
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+    
+}

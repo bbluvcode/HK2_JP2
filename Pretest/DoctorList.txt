@@ -1,0 +1,2 @@
+B1112, binh binh 2, a, 2
+B1111, binh vo, nhi, 10

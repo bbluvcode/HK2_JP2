@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="451.0" prefWidth="695.0" spacing="20.0" style="-fx-background-color: aqua;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.demojavafx.SecondaryController">
+    <children>
+      <Text fill="#dc1b1b" stroke="#14dc24" strokeType="OUTSIDE" strokeWidth="0.5" text="New Text">
+         <font>
+            <Font name="Times New Roman" size="25.0" />
+         </font>
+      </Text>
+        <Label text="Secondary View" />
+        <Button fx:id="secondaryButton" onAction="#switchToLayout" text="Switch to Primary View" />
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>

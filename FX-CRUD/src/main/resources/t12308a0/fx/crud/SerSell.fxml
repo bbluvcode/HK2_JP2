@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="655.0" prefWidth="1235.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="t12308a0.fx.crud.SerSellController">
+   <children>
+      <TableView fx:id="tvSerSell" layoutX="84.0" layoutY="78.0" onMouseClicked="#OnSelectProduct_Sersell" prefHeight="274.0" prefWidth="471.0">
+        <columns>
+          <TableColumn fx:id="colSerSell_idss" prefWidth="45.33331298828125" text="ID" />
+          <TableColumn fx:id="colSerSell_idc" prefWidth="86.66665649414062" text="ID Phân loại" />
+            <TableColumn fx:id="colSerSell_name" prefWidth="132.0" text="Tên" />
+            <TableColumn fx:id="colSerSell_price" minWidth="7.3333740234375" prefWidth="60.66668701171875" text="Giá" />
+            <TableColumn fx:id="colSerSell_qoh" minWidth="0.0" prefWidth="58.66668701171875" text="Số lượng" />
+            <TableColumn fx:id="colSerSell_img" minWidth="7.3333740234375" prefWidth="87.33331298828125" text="img" />
+        </columns>
+      </TableView>
+      <Label layoutX="677.0" layoutY="127.0" text="ID catogory">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSerSell_idc" layoutX="753.0" layoutY="123.0" prefHeight="25.0" prefWidth="191.0" />
+      <Label layoutX="698.0" layoutY="177.0" text="NAME">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSerSell_name" layoutX="753.0" layoutY="173.0" prefHeight="25.0" prefWidth="191.0" />
+      <Label layoutX="698.0" layoutY="229.0" prefHeight="17.0" prefWidth="36.0" text="PRICE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSerSell_price" layoutX="753.0" layoutY="225.0" prefHeight="25.0" prefWidth="191.0" />
+      <Label layoutX="710.0" layoutY="90.0" text="ID">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSerSell_idss" layoutX="753.0" layoutY="86.0" prefHeight="25.0" prefWidth="191.0" />
+      <Label layoutX="698.0" layoutY="272.0" prefHeight="17.0" prefWidth="36.0" text="QOH">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSerSell_qoh" layoutX="753.0" layoutY="268.0" prefHeight="25.0" prefWidth="191.0" />
+      <Button fx:id="btnAdd_Sersell" layoutX="618.0" layoutY="324.0" mnemonicParsing="false" onAction="#addItem_Sersell" prefHeight="55.0" prefWidth="101.0" text="Add" />
+      <Button fx:id="btnUpdate_Sersell" layoutX="784.0" layoutY="324.0" mnemonicParsing="false" onAction="#UpdateItem_Sersell" prefHeight="55.0" prefWidth="101.0" text="Update" />
+      <Button fx:id="btnDelete_Sersell" layoutX="922.0" layoutY="328.0" mnemonicParsing="false" onAction="#deleteItem_SerSel" prefHeight="55.0" prefWidth="101.0" text="Delete" />
+      <Label layoutX="710.0" layoutY="50.0" text="img">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSerSell_img" layoutX="753.0" layoutY="46.0" prefHeight="25.0" prefWidth="191.0" />
+      <ImageView fx:id="imgView_Sersell" fitHeight="87.0" fitWidth="136.0" layoutX="1023.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btnChangeImage_Sersell" layoutX="1032.0" layoutY="158.0" mnemonicParsing="false" onAction="#selectImage" prefHeight="55.0" prefWidth="101.0" text="Select Image" />
+   </children>
+</AnchorPane>
