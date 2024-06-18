@@ -13,7 +13,7 @@ import java.sql.SQLException;
  * @author Admin
  */
 public class ConnectDB {
-
+//oke oke
     public Connection cn;
 
     public Connection getConnect() {
